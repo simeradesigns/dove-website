@@ -1,1 +1,2 @@
 # dove-website
+Símera Designs ©
