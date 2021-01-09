@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab:300");
 
+/* NAVBAR STARTS */
 .navbar {
   padding: 2px 0px;
   width: 100%;
@@ -17,6 +18,7 @@
     margin-left: 25rem;
   }
 }
+
 /* HERO STARTS */
 .overlay {
   position: absolute;
@@ -110,4 +112,16 @@
 .hero-slider .flickity-page-dots .dot.is-selected {
   background: #1900ff;
   border: 0 solid #1900ff;
+}
+#slider1 {
+  background-image: url(images/slider1.jpg);
+}
+#slider2 {
+  background-image: url(images/slider2.jpeg);
+}
+#slider3 {
+  background-image: url(https://68.media.tumblr.com/3beb13a4167aa8b5c4743eac17bf351c/tumblr_o8nyvtiHfC1slhhf0o1_1280.jpg);
+}
+#slider4 {
+  background-image: url(https://68.media.tumblr.com/c40636a5a0d4aa39c335c8db40d2144f/tumblr_omc7z7Xv8N1slhhf0o1_1280.jpg);
 }
