@@ -12,12 +12,14 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css"
     />
     <!-- Local CSS -->
     <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="nav.css" />
     <link rel="icon" href="images/favicon.svg" type="image/gif" />
 
     <title>DOVE EVENTS | FEEL BETTER</title>
@@ -26,42 +28,78 @@
     <!-- ---------------
       NAVBAR STARTS
     -------------------->
-    <section>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/navbar_img.png" alt="" width="100" height="50" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item px-3">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#story">Story</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+      <div class="container">
+        <!-- Brand -->
+
+        <!-- Collapse -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://mdbootstrap.com/material-design-for-bootstrap/"
+                target="_blank"
+                >About
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://mdbootstrap.com/bootstrap-tutorial/"
+                target="_blank"
+                >gallery</a
+              >
+            </li>
+          </ul>
+
+          <!-- Right -->
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a
+                href="https://www.facebook.com/mdbootstrap"
+                class="nav-link"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://twitter.com/MDBootstrap"
+                class="nav-link"
+                target="_blank"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border border-light rounded">
+                <i class="fab fa-github mr-2"></i>dove events
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </section>
+      </div>
+    </nav>
     <!-- ---------------
       NAVBAR ENDS
     -------------------->
@@ -108,13 +146,70 @@
     <!-- ---------------
       ABOUT STARTS
     -------------------->
-    <section id="story">
-      <div class="container bg-success">HELLO</div>
-    </section>
+    <!-- <section id="story">
+      <div class="slider">
+        <div id="slide1" style="background-color: black">
+          <span>lalala</span>
+        </div>
+        <div id="slide2" style="background-color: rgba(0, 102, 255, 0.671)">
+          <span> blahblah</span>
+        </div>
+        <div id="slide3">
+          <img src="images/Text.svg" alt="" />
+        </div>
+      </div>
+    </section> -->
     <!-- ---------------
       ABOUT ENDS
     -------------------->
 
+    <!-- ---------------
+      GALLERY STARTS
+    -------------------->
+    
+    <section><div id = "overlay"> 
+    
+    </div>
+    <h1> Flickr Picture Gallery</h1>
+
+
+    <p> Click on any picture to see a larger version. When you're done looking, click outside the picture to return to the main gallery. </p>
+
+    <!--this will contain the overlay when a picture is clicked -->
+
+
+
+    <!--this will contain the image when a picture is clicked -->
+    <div id = "frame"> 
+      <img src= "" alt = "" />
+    </div>
+
+    </div> 
+
+    <!--as the API is called, images will populate into this list -->
+    <div id="photo-list">
+
+    </div>
+
+    <!--a ul with li tags will be appended into this div once the API is called and the number of pages is calculated -->
+    <div class = "pagination"> 
+
+    </div></section>
+         
+        
+    
+        
+    
+    <!-- ---------------
+      GALLERY ENDS
+    -------------------->
+
+    <!-- ---------------
+      FOOTER ENDS
+    -------------------->
+    <footer>
+      
+    </footer>
     <!-- REMOTE JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -122,7 +217,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script src ="js/script.js"></script>
     <!--LOCAL JS-->
     <script src="js/hero_slider.js"></script>
   </body>

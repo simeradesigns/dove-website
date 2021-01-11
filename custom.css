@@ -1,25 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab:300");
 
-/* NAVBAR STARTS */
-.navbar {
-  padding: 2px 0px;
-  width: 100%;
-  /* border-radius: 0px 0px 100px 100px; */
-  transition: height 0.3s ease-out, background 0.3s ease-out,
-    box-shadow 0.3s ease-out;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
-  z-index: 100;
-}
-@media (min-width: 768px) {
-  .ml-auto {
-    margin-left: 25rem;
-  }
-}
-
-/* HERO STARTS */
 .overlay {
   position: absolute;
   width: 100%;
@@ -114,7 +94,7 @@
   border: 0 solid #1900ff;
 }
 #slider1 {
-  background-image: url(images/slider1.jpg);
+  background-image: url(images/Text.svg);
 }
 #slider2 {
   background-image: url(images/slider2.jpeg);
@@ -124,4 +104,94 @@
 }
 #slider4 {
   background-image: url(https://68.media.tumblr.com/c40636a5a0d4aa39c335c8db40d2144f/tumblr_omc7z7Xv8N1slhhf0o1_1280.jpg);
+}
+/* .slider {
+  width: 300%;
+  height: 100%;
+  text-align: center;
+  font-size: 9em;
+  line-height: 500%;
+  font-family: "Oswald", sans-serif;
+}
+#slide1,
+#slide2,
+#slide3 {
+  width: 33.33333333333333%;
+  height: 100%;
+  float: left;
+}
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  body {
+    font-size: 8px;
+  }
+} */
+
+body {
+  font-family: "PT Serif", serif;
+  background-color: #fff8f0;
+}
+
+h1,
+p,
+ul,
+#photo-list {
+  text-align: center;
+}
+
+h1,
+#photo-list {
+  margin: 0 auto;
+}
+
+/* contains the img tags with the "paginate" class */
+#photo-list,
+li {
+  padding: 5px;
+}
+
+/* appended to the photo-list by script.js */
+img {
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+}
+
+/* styles the page numbers */
+li {
+  background-color: pink;
+  list-style-type: none;
+  display: inline;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* pops up when the user clicks on a picture */
+#overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  opacity: 0.7;
+}
+
+/* pops up when user clicks on a picture, contains a larger version of the picture */
+#frame img {
+  display: none;
+  position: fixed;
+  background-color: white;
+  width: 700px;
+  height: auto;
+  margin-left: -350px;
+  left: 50%;
 }
