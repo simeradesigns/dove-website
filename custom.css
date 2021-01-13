@@ -1,0 +1,110 @@
+@import url();
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #e8f8f5;
+  background-attachment: fixed;
+}
+
+header {
+  position: relative;
+  margin: 10px auto;
+  padding: 10px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  float: left;
+  color: #31c3a6;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #31c3a6;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+nav ul li a.alive,
+nav ul li a:hover {
+  background: #31c3a6;
+  color: white;
+  transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  header {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    padding: 0;
+  }
+  .menu-toggle {
+    margin: 10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #31c3a6;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+  }
+  .menu-toggle::before {
+    content: "\f0c9";
+    font-family: fontAwesome;
+    line-height: 40px;
+  }
+  .menu-toggle.alive::before {
+    content: "\f00d";
+  }
+  nav {
+    display: none;
+  }
+  nav.alive {
+    display: block;
+    width: 100%;
+  }
+  nav.alive ul {
+    display: block;
+  }
+  nav.alive ul li {
+    margin: 0;
+  }
+  nav.alive ul li a {
+    margin: 0;
+  }
+}
