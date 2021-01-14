@@ -5,7 +5,6 @@
   background: rgb(52, 87, 97);
   font-family: "montserrat", sans-serif;
 }
-/*END FOOTER SOCIAL DESIGN*/
 
 /* @media only screen and (max-width: 768px) {
   .single_footer {
@@ -44,13 +43,12 @@
   padding: 0;
 } */
 
-/*END NEWSLETTER CSS*/
 .reach_us {
   padding-top: 2rem;
   padding-bottom: 1rem;
   padding-left: 3rem;
 }
-/*START SOCIAL PROFILE CSS*/
+/*Social Profiles CSS*/
 
 .social_profile ul {
   padding-bottom: 2rem;
